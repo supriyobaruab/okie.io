@@ -130,7 +130,7 @@ section {
 }
 .Mom {
   display: grid;
-  grid-template-columns: repeat(1, 0fr);
+  grid-template-columns: repeat(1, 4fr);
   align-items: center;
   justify-content: center;
   padding: 10px 12%;
@@ -144,6 +144,7 @@ section {
   border-radius: 1rem;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   align-items: center;
+  margin: 0 auto;
 }
 .Mom img {
   width: 250px;

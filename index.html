@@ -11,9 +11,41 @@
     <header>
       <h1>O <span>G</span></h1>
       <nav class="nav-bar">
-        <a href="#first-page" class="active">Home</a>
+        <a href="#first-page" class="active" id="show">Home</a>
+        <a href="#second-page" id="show">Members</a>
+        <a href="#third-page" id="show">Gallery</a>
+        <a href="#" id="show">Connect</a>
+        <a class="slide" onclick="sidebar();"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -1200 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            /></svg
+        ></a>
+      </nav>
+      <!--slidebar-->
+      <nav class="menu">
+        <a onclick="displayHide()"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -1200 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            /></svg
+        ></a>
+        <br />
+        <a href="#first-page">Home</a>
         <a href="#second-page">Members</a>
-        <a href="#">Information</a>
+        <a href="#third-page">Gallery</a>
         <a href="#">Connect</a>
       </nav>
     </header>
@@ -75,7 +107,7 @@
             <p>Blood group : O+</p>
             <p>Contact : 01636524735</p>
           </div>
-          <!--ME-->
+          <!--Emong-->
           <div class="image-border">
             <img src="./Images/me.jpg" />
             <h2>Name : <span>Supriyo </span>Barua</h2>
@@ -83,7 +115,7 @@
             <p>Blood group : B+</p>
             <p>Contact : 01636524735</p>
           </div>
-          <!--Aongkon-->
+          <!--Pyaw-->
           <div class="image-border">
             <img src="./Images/aongkon.jpg" />
             <h2>Name : <span>Anirudaw </span>Barua</h2>
@@ -91,7 +123,7 @@
             <p>Blood group : A+</p>
             <p>Contact : 01636524735</p>
           </div>
-          <!--Debongshi-->
+          <!--Mong swe sain-->
           <div class="image-border">
             <img src="./Images/debongshi.jpg" />
             <h2>Name : <span>Debongshi </span>Chakma</h2>
@@ -107,6 +139,12 @@
             <p>Blood group : O+</p>
             <p>Contact : 01636524735</p>
           </div>
+        </div>
+      </section>
+      <!--Galary-->
+      <section class="gallery" id="third-page">
+        <div class="slideshow">
+          <h1>--Galary--</h1>
         </div>
       </section>
     </main>

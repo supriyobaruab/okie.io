@@ -38,7 +38,41 @@ span {
 .nav-bar a.active {
   border-bottom: 2px solid orangered;
 }
+/*Menu*/
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: black;
+  padding: 30px;
+  display: none;
+}
+.slide {
+  display: none;
+}
+.menu a {
+  color: white;
+  font-size: 20px;
+  margin: 0 14px;
+  border-bottom: 2px solid transparent;
+  letter-spacing: 1px;
+  line-height: 3em;
+}
+.menu a:hover,
+.menu a.active {
+  border-bottom: 2px solid orangered;
+}
 
+section {
+  min-height: 100vh;
+}
 .home {
   min-height: 100vh;
   align-items: center;
@@ -137,21 +171,48 @@ span {
 .mimg .img :hover {
   scale: 1.1;
 }
-/*
+
 @media (max-width: 800px) {
   .home {
     display: flex;
     flex-direction: column;
+    gap: 2em;
   }
   .home .about {
     width: 350px;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+  }
+  .home img {
+    width: 280px;
+    transition: 1s ease;
   }
   .home h1 {
     font-size: 80px;
     transition: 1s ease;
-    padding-top: 121px;
+    padding-top: 165px;
   }
-}*/
+  .mimg {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12%;
+    width: 100%;
+    gap: 7em;
+  }
+  .slide {
+    display: block;
+  }
+  .members h1 {
+    padding-top: 5vh;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 50px;
+    text-decoration: underline orangered;
+    color: #ecdfcc;
+  }
+  #show {
+    display: none;
+  }
+}
